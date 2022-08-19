@@ -37,21 +37,21 @@
                               <div class="button">3</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button">&lt;</div>
+                                <div id="backspace-btn" class="button">&lt;</div>
                                 <div class="button">0</div>
-                                <div class="button">C</div>
+                                <div id="clear-btn" class="button">C</div>
                             </div>
                             <div>
                                 <button type="submit" class="submit-btn">Submit</button>
-                                <p class="action-left">3 try left</p>
+								<p class="action-left"><span id="tries-left" >3</span> try left</p>
                             </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="notify-section">
-            <p class="notify">❌ Pin Didn't Match, Please try again</p>
-            <p class="notify">✅ Pin Matched... Secret door is opening for you</p>
+            <p id="failure-msg" class="notify">❌ Pin Didn't Match, Please try again</p>
+            <p id="success-msg" class="notify">✅ Pin Matched... Secret door is opening for you</p>
         </div>
     </div>
     <script src="index.js"></script>
